@@ -1,0 +1,217 @@
+section {
+    padding: 100px 170px;
+}
+.online>span {
+    color: #696969;
+    font-size: 13px;
+    font-family: '微软雅黑';
+}
+.online>p {
+    color: #696969;
+    font-size: 13px;
+    font-family: '微软雅黑';
+}
+.table {
+    position: relative;
+    top: 30px;
+}
+.table>span {
+    color: #696969;
+    font-size: 13px;
+    font-family: '微软雅黑';
+}
+.online-table {
+    width: 780px;
+    height: 180px;
+    position: relative;
+    top: 20px;
+}
+.online-table>input {
+    background-color: #F2F2F2;
+    border-style:hidden ;
+}
+.online-table>input:hover {
+    
+}
+.online-table>input:first-child {
+    width: 373px;
+    height: 40px;
+}
+.online-table>input:nth-child(2) {
+    width: 373px;
+    height: 40px;
+    position: relative;
+    right: -12px;
+}
+.online-table>input:nth-child(3) {
+    width: 768px;
+    height: 40px;
+    margin: 12px 0;
+}
+.online-table>input:nth-child(4) {
+    width: 768px;
+    padding-bottom: 63px;
+}
+.footer {
+    margin-top: 83px;
+}
+#box {
+    border: 1px solid #180c0c;
+    border: none;
+    width: 800px;
+    height: 340px;
+    box-shadow: 1px 1px 5px 5px #575151;
+    opacity: 0.7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    perspective: 2800px;
+    background-color: #fff;
+    position: relative;
+    margin: 50px auto;
+    padding-top: 45px;
+  }
+  #box::before {
+    width: 100px;
+    height: 100px;
+    content: '';
+    position: absolute;
+    background: url('../images/self.jpg') no-repeat;
+    background-size: 100% 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    animation: getover 6s linear infinite;
+  }
+  @keyframes getover {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translateX(100px) translateY(100px) translateZ(100px);
+    }
+  }
+  /* login_box */
+  #login_box {
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+  }
+  #login_box img {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-top: 20px;
+    transition: all 0.5s;
+  }
+  #box .cover_box {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    opacity: 0.9;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transform-origin: left;
+    transform-style: preserve-3d;
+  }
+  #box #file:checked ~ .cover_box {
+    transform: rotateY(-180deg);
+  }
+  label:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  #login_box h2 {
+    color: #201e1e;
+    font-size: 30px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+  .button {
+    position: relative;
+  }
+  input:focus + img {
+    transform: translateY(-10px) scale(0.6);
+  }
+  .login input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #7c7272;
+    width: 350px;
+    padding: 5px 0;
+    margin: 20px 0;
+  }
+  .login .content1 {
+    font-size: 15px;
+    color: red;
+    position: relative;
+    top: -20px;
+    left: 30px;
+  }
+  .login .content2 {
+    font-size: 15px;
+    color: red;
+    position: relative;
+    top: -20px;
+    left: 30px;
+  }
+  .button_box {
+    position: relative;
+  }
+  #login_box span {
+    color: #7c7272;
+    font-size: 15px;
+    position: relative;
+    top: 10px;
+  }
+  #login_box span a {
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    /* transform-style: preserve-3d;
+      transform-origin: left; */
+  }
+  #login_box span a:hover {
+    text-decoration: underline;
+  }
+  #login_box span a:hover {
+    transform: translateX(20px);
+  }
+  .button_box button {
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    color: #fff;
+    background-image: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border: 1PX solid #555555;
+    /* border-radius:50px ; */
+    /* z-index: -1; */
+    font-size: 20px;
+  }
+  .button_box button:hover {
+    background-color: #ff6000;
+    cursor: pointer;
+    animation-name: run;
+    animation-timing-function: linear;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+  .button_box button:hover::before {
+    animation-timing-function: linear;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes run {
+    100% {
+      background-position: -400% 0;
+    }
+  }
